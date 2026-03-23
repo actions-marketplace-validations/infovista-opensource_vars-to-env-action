@@ -23,12 +23,12 @@ describe('secrets-to-env-action', () => {
     inputSecrets = {
       MY_SECRET_1: 'VALUE_1',
       MY_SECRET_2: 'VALUE_2',
-      my_low_secret_1: 'low_value_1',
+      my_low_secret_1: 'low_value_1'
     }
     outputSecrets = {
       MY_SECRET_1: 'VALUE_1',
       MY_SECRET_2: 'VALUE_2',
-      MY_LOW_SECRET_1: 'low_value_1',
+      MY_LOW_SECRET_1: 'low_value_1'
     }
 
     newSecrets = {}
@@ -141,7 +141,7 @@ describe('secrets-to-env-action', () => {
 
     expect(newSecrets).toEqual({
       SECRET_1: inputSecrets.MY_SECRET_1,
-      SECRET_2: inputSecrets.MY_SECRET_2,
+      SECRET_2: inputSecrets.MY_SECRET_2
     })
   })
 
